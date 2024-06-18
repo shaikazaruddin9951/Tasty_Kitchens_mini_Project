@@ -34,7 +34,7 @@ const CartItem = props => (
                 onClick={decreaseQuantity}
                 data-testid="decrement-quantity"
               >
-                <BsDashSquare size={16} />
+                <BsDashSquare size={16} aria-label="minus" />
               </button>
               <p data-testid="item-quantity" className="item-quantity">
                 {quantity}
@@ -45,7 +45,7 @@ const CartItem = props => (
                 onClick={increaseQuantity}
                 data-testid="increment-quantity"
               >
-                <BsPlusSquare size={16} />
+                <BsPlusSquare size={16} aria-label="plus" />
               </button>
             </div>
             <p className="price" data-testid="total-price">

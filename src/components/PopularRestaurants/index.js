@@ -119,7 +119,7 @@ class PopularRestaurants extends Component {
             onClick={this.decrementPage}
             data-testid="pagination-left-button"
           >
-            <RiArrowDropLeftLine size={20} />
+            <RiArrowDropLeftLine size={20} aria-label="leftarrow" />
           </button>
           <p data-testid="active-page-number" className="page-count">
             {activePage}
@@ -137,7 +137,7 @@ class PopularRestaurants extends Component {
             onClick={this.incrementPage}
             data-testid="pagination-right-button"
           >
-            <RiArrowDropRightLine size={20} />
+            <RiArrowDropRightLine size={20} aria-label="rightarrow" />
           </button>
         </div>
       </>

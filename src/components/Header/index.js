@@ -85,7 +85,11 @@ const Header = props => {
         <Popup
           trigger={
             <button type="button" className="hamburger-btn">
-              <GiHamburgerMenu size={25} className="hamburger" />
+              <GiHamburgerMenu
+                size={25}
+                className="hamburger"
+                aria-label="hamburger"
+              />
             </button>
           }
         >
@@ -115,7 +119,11 @@ const Header = props => {
                 </button>
               </div>
               <button type="button" className="close-btn">
-                <AiOutlineCloseCircle size={18} onClick={() => close()} />
+                <AiOutlineCloseCircle
+                  aria-label="close"
+                  size={18}
+                  onClick={() => close()}
+                />
               </button>
             </div>
           )}

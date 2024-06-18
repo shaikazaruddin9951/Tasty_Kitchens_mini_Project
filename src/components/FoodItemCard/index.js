@@ -75,7 +75,7 @@ class FoodItemCard extends Component {
                       className="decrement-count"
                       onClick={onDecreaseQuantity}
                     >
-                      <BsDashSquare className="icon-btn" />
+                      <BsDashSquare className="icon-btn" aria-label="minus" />
                     </button>
                     <p data-testid="active-count" className="active-count">
                       {quantity}
@@ -86,7 +86,7 @@ class FoodItemCard extends Component {
                       className="increment-count"
                       onClick={onIncreaseQuantity}
                     >
-                      <BsPlusSquare className="icon-btn" />
+                      <BsPlusSquare className="icon-btn" aria-label="plus" />
                     </button>
                   </div>
                 )}
